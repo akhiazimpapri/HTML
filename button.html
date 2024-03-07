@@ -8,6 +8,18 @@
         border-radius: 2px;
         cursor: pointer; /*it make the cursor as hand simble.*/
         margin-right: 8px;/*make a space*/
+        transition: background-color 1s;
+    }
+
+    /* transition : 'the property you want to trangit' 'time'*/
+    .subscribe-button:hover {
+        background-color: rgb(202, 76, 76);
+    }
+    /* "hover" means changing color of any button.*/
+
+
+    .subscribe-button:active { /* it activate after cleaking the button.*/
+        background-color:rgb(200, 96, 96);
     }
 
     .join-button {
@@ -21,6 +33,17 @@
         border-radius: 2px;
         cursor: pointer;
         margin-right: 8px;
+        transition: opacity 0.15s; /* how smooth the color will change*/ 
+        transition: background-color 1s, color 1s; /* here 'color' is for trangit the text also.*/
+    }
+
+    .join-button:hover {
+        background-color: rgb(2, 134, 235);
+        color: white;
+    }
+
+    .join-button:active {
+        opacity: 0.7; /*color will become fade. opacity range is 0 to 1.*/
     }
 
     .tweet-button {
@@ -32,7 +55,14 @@
         width: 74px;
         cursor: pointer;
         font-weight: bold; /*make font bold*/
+        transition: box-shadow 0.15s;
     }
+
+    .tweet-button:hover {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+        /*box-shadow gets 4 value.right, up, behind, color*/
+    }
+
 </style>
 
 <button class="subscribe-button">
