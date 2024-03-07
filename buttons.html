@@ -1,5 +1,5 @@
 <style>
-    button {
+    .subscribe-button {
         background-color: rgb(200, 0, 0);
         color: white;
         border: none;
@@ -7,7 +7,42 @@
         width: 100px;
         border-radius: 2px;
         cursor: pointer; /*it make the cursor as hand simble.*/
+        margin-right: 8px;/*make a space*/
+    }
+
+    .join-button {
+        background-color: white;
+        color: rgb(0, 125, 221);
+        border-color: rgb(0, 125, 221);
+        border-style: solid;
+        border-width: 1px;
+        height: 37px;
+        width: 60px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+
+    .tweet-button {
+        background-color: rgb(0, 125, 221);
+        color: white;
+        border: none;
+        border-radius: 18px;
+        height: 37px;
+        width: 74px;
+        cursor: pointer;
+        font-weight: bold; /*make font bold*/
     }
 </style>
 
-<button>SUBSCRIBE</button>
+<button class="subscribe-button">
+    SUBSCRIBE
+</button>
+
+<button class="join-button">
+    JOIN
+ </button>
+
+ <button class="tweet-button">
+    Tweet
+</button>
